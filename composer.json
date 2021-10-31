@@ -1,0 +1,24 @@
+{
+    "name": "novin-tarh-pars/send-voice-message",
+    "description": "the project for send voice message by simotel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "NovinTarhPars\\": "src/",
+            "App\\": "src/app"
+        },
+        "files": [
+            "src/app/Helpers/General.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Saeed Mashmoli",
+            "email": "saeedmashmoli1416@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
