@@ -30,9 +30,9 @@ require_once './vendor/autoload.php';
 use NovinTarhPars\SendVoiceMessage;
 
 /**
- $file File | URL ["http://"]
- $numbers array ["0999999999"]
- $options array [
+ $url = file | ["http://"] : File | URL 
+ $numbers = ["0999999999"] : array
+ $options = [
     "interface_context" => "",
     "interface_text" => "",
     "try_interval" => "600",
@@ -41,7 +41,7 @@ use NovinTarhPars\SendVoiceMessage;
     "end" => "2020-01-02 17:00",
     "description" => "this campain create by api",
     "count" => 1
- ]
+ ] : array
 */
-SendVoiceMessage::run_fast_campaign($numbers,$file,$options);
+SendVoiceMessage::run_fast_campaign($numbers,$url,$options);
 ```
