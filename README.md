@@ -30,7 +30,7 @@ require_once './vendor/autoload.php';
 use NovinTarhPars\SendVoiceMessage;
 
 /**
- $url = file | ["http://"] : File | URL 
+ $url = file | ["http://"] : File | URL         // file type mp3,mp4,wav
  $numbers = ["0999999999"] : array
  $options = [
     "interface_context" => "",

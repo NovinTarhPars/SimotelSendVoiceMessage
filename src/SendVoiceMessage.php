@@ -26,7 +26,7 @@ class SendVoiceMessage
                 die;
             }else{
                 if(!checkVoiceFile(explode('.',$url['name'])[1])){
-                    return self::test("نوع فایل اشتباه است.");
+                    return self::test("نوع فایل بایستی mp3,mp4,wav باشد.");
                     die;
                 }
                 $filename = $url['name'];
@@ -40,7 +40,7 @@ class SendVoiceMessage
                 $file_real_name = basename($url);
                 $filename = explode('.',basename($url))[0];
                 if(!checkVoiceFile(explode('.',$file_real_name)[1])){
-                    return self::test("آدرس فایل اشتباه است.");
+                    return self::test("نوع فایل بایستی mp3,mp4,wav باشد.");
                     die;
                 }
                 $filepath = file_put_contents($file_real_name,file_get_contents($url));
