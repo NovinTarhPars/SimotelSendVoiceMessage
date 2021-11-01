@@ -81,7 +81,7 @@ class SendVoiceMessage
             "numbers" => $numbers,
             "groups" => [],
             "try_interval" => isset($options['try_interval']) ? $options['try_interval'] : "600",
-            "try" => 1,
+            "try" => isset($options['try']) ? $options['try'] : 1,
             "start" => isset($options['start']) ? $options['start'] : $start,
             "end" => isset($options['end']) ? $options['end'] : $end,
             "announcement" => $announce_id,

@@ -29,5 +29,19 @@ API_PASSWORD=<YourSimotelApiPassword>      //show or create in simotel admin pan
 require_once './vendor/autoload.php';
 use NovinTarhPars\SendVoiceMessage;
 
-SendVoiceMessage::run_fast_campaign(string $filename,array $numbers,File $file);
+/**
+ $file File | URL ["http://"]
+ $numbers array ["0999999999"]
+ $options array [
+    "interface_context" => "",
+    "interface_text" => "",
+    "try_interval" => "600",
+    "try" => 1,
+    "start" => "2020-01-01 17:00",
+    "end" => "2020-01-02 17:00",
+    "description" => "this campain create by api",
+    "count" => 1
+ ]
+*/
+SendVoiceMessage::run_fast_campaign($numbers,$file,$options);
 ```
