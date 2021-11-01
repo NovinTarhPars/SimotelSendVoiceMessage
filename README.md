@@ -43,5 +43,5 @@ use NovinTarhPars\SendVoiceMessage;
     "count" => 1
  ] : array
 */
-SendVoiceMessage::run_fast_campaign($numbers,$url,$options);
+SendVoiceMessage::run($numbers,$url,$options);
 ```
