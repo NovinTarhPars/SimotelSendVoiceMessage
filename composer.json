@@ -1,6 +1,7 @@
 {
     "name": "novin-tarh-pars/send-voice-message",
     "description": "the project for send voice message by simotel",
+    "license": "GPL-3.0-or-later",
     "type": "library",
     "autoload": {
         "psr-4": {
