@@ -11,12 +11,12 @@ class AnnounceController extends Controller
     {
         parent::__construct();
     }
-    public function upload($file)
+    public function upload($filepath)
     {
         
-        if($file !== ""){
+        if($filepath !== ""){
             $data = [
-                'file' => new CURLFile($file['tmp_name'])
+                'file' => new CURLFile($filepath)
             ];
             $headers = [
                 "X-APIKEY: $this->api_key",

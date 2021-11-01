@@ -12,3 +12,11 @@ if(!function_exists('generateRandomString')){
         return $randomString;
     }
 }
+if(!function_exists('checkVoiceFile')){
+    function checkVoiceFile($path){
+        if(!in_array($path,['mp3','wav','mp4'])){
+            return false;
+        }
+        return true;
+    }
+}
